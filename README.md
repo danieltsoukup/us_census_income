@@ -2,8 +2,57 @@
 
 The goal of this project is to identify characteristics that are associated with a person earning more than $50K.
 
-## Contents
+## Executive Summary
 
+TBD
 
-## Tech Stack
+## Workplan
+
+We are aiming to carry out the following main steps:
+
+- **Exploratory Data Analysis:** Numerical and/or graphical representations of the data that
+may help inform insights and/or tactics for answering the research question of interest.
+- **Data Preparation:** Data cleaning, preprocessing, feature engineering, etc., that may aid in improving data clarity & model generation.
+- **Data Modeling:** The building of a few competing models to predict the target variable (earn $50K+).
+- **Model Assessment:** A selection of the best model based on performance comparisons.
+- **Results:** A concise summary of key findings, recommendations, & future improvements.
+
+## Work Log
+
+### Todo
+
+- Day 1: setup & baselines.
+  - Setup Dataiku DSS: project, resources and custom environemnt, Github integration
+  - EDA: research & understand the data, plan for data cleaning and preparation
+  - Basic data preprocessing
+  - Baseline modeling and evaluation
+- Day 2: model optimization.
+  - Iterate on data prep to process all features
+  - Add HP tuning
+  - Add interpretation
+  - Presentation outline
+- Day 3: review and refine.
+  - Finalize exports and github repo
+  - Finalize and export presentation
+
+## Tech Stack & Implementation
+
+We have used Dataiku DSS Cloud to develop the Python notebooks and organize flows for testing, training and evaluation. The notebooks recipes and notebooks we created are synced with this current repo. For convenience, we also exported an HTML version of each notebook (the DSS -> Github push does not keep output cells).
+
+Core libraries used:
+- Pandas and numpy for processing
+- Matplotlib and plotly for visuals
+- MLFlow for model tracking and saving
+- LogisticRegression (sklearn) and XGBoost for modelling
+- Optuna for HP tuning
+
+We exported the requirements file for easier reproducibility.
+
+**Notes**:
+- Our original plan was to use PySpark for data processing and model training to create a scalable flow, however our free-trial DSS subscription did not include the Spark integration.
+- The following libraries were not available to install due to "OSError: Permission Denied", likely another limitation of the tree trial:
+  - `plotly` for interactive visualization
+  - `optuna` for HP tuning
+ 
+
 
