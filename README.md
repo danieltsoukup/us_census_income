@@ -73,3 +73,12 @@ We exported the requirements file for easier reproducibility.
  
 
 
+## Key Reference
+
+- Dataiku
+  - Tracking
+    - https://doc.dataiku.com/dss/latest/mlops/experiment-tracking/tracking.html
+    - https://doc.dataiku.com/dss/latest/mlops/mlflow-models/limitations.html
+- XGBoost
+  - https://github.com/optuna/optuna-examples/blob/main/xgboost/xgboost_cv.py
+  - https://xgboost.readthedocs.io/en/latest/python/python_api.html
