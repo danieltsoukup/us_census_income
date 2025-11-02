@@ -6,6 +6,8 @@ The goal of this project is to identify characteristics that are associated with
 
 TBD - please see the attached [slides]().
 
+---- 
+
 The following order is recommended to review the code:
 - [notebooks/0-EDA](notebooks/0-EDA.ipynb)
 - [recipes/1-Preprocessing](recipes/1-Preprocessing.ipynb)
@@ -13,10 +15,14 @@ The following order is recommended to review the code:
 - [recipes/3-Evaluation](recipes/3-Evaluation.ipynb)
 Please see the exported HTML for full outputs (DSS sync clears outputs).
 
+## Reproducibility
+
 To reproduce the results:
-1. Upload the data files to DSS Cloud
+1. Create new Project on DSS. 
 2. Setup code env using [requirements.txt](requirements.txt)
-3. Run the flow
+3. Use the [flow documentation](docs/Dataiku%20Flow%20Documentation%20-%20US_CENSUS_PROJECT.docx) to
+  - upload the raw data files under the right name,
+  - create and run the end-to-end Flow.
 
 ## Workplan
 
