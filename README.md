@@ -4,7 +4,19 @@ The goal of this project is to identify characteristics that are associated with
 
 ## Executive Summary
 
-TBD
+TBD - please see the attached [slides]().
+
+The following order is recommended to review the code:
+- [notebooks/0-EDA](notebooks/0-EDA.ipynb)
+- [recipes/1-Preprocessing](recipes/1-Preprocessing.ipynb)
+- [recipes/2-Modeling](recipes/2-Modeling.ipynb)
+- [recipes/3-Evaluation](recipes/3-Evaluation.ipynb)
+Please see the exported HTML for full outputs (DSS sync clears outputs).
+
+To reproduce the results:
+1. Upload the data files to DSS Cloud
+2. Setup code env using [requirements.txt](requirements.txt)
+3. Run the flow
 
 ## Workplan
 
@@ -19,8 +31,6 @@ may help inform insights and/or tactics for answering the research question of i
 
 ## Work Log
 
-### Todo
-
 - Day 1: setup & baselines.
   - Setup Dataiku DSS: project, resources and custom environemnt, Github integration
   - EDA: research & understand the data, plan for data cleaning and preparation
@@ -28,22 +38,23 @@ may help inform insights and/or tactics for answering the research question of i
   - Baseline modeling and evaluation
 - Day 2: model optimization.
   - Iterate on data prep to process all features
-  - Add HP tuning
-  - Add interpretation
+  - Add HP tuning and address imbalance
+  - Improve evaluation and add interpretation
   - Presentation outline
 - Day 3: review and refine.
-  - Finalize exports and github repo
+  - Finalize code and sync with Github
   - Finalize and export presentation
+  - Finalize Github repo (readme), ensure reproducibility
 
 ## Tech Stack & Implementation
 
-We have used Dataiku DSS Cloud to develop the Python notebooks and organize flows for testing, training and evaluation. The notebooks recipes and notebooks we created are synced with this current repo. For convenience, we also exported an HTML version of each notebook (the DSS -> Github push does not keep output cells).
+We have used Dataiku DSS Cloud to develop the Python notebooks and organize flows for testing, training and evaluation. The recipes and notebooks we created are synced with this current repo. For convenience, we also exported an HTML version of each notebook (the DSS -> Github push does not keep output cells).
 
 Core libraries used:
 - Pandas and numpy for processing
 - Matplotlib and plotly for visuals
 - MLFlow for model tracking and saving
-- LogisticRegression (sklearn) and XGBoost for modelling
+- XGBoost for modelling
 - Optuna for HP tuning
 
 We exported the requirements file for easier reproducibility.
