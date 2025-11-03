@@ -15,7 +15,7 @@ Analysing feature importance highlighted sex, education and employment indicator
 
 Please see the attached [presentation](presentation/US%20Census%20-%20Income%20Prediction.pdf) for a more detailed summary.
 
-**Note**: while being practical in some situations, for this project we chose not to use generative AI in writing the code or the accompanying documentation/materials.
+**Note**: while being practical in some situations, for this project we chose not to use generative AI (e.g. Cursor, Copilot) in writing the code or the accompanying documentation/materials. We did use the built-in DSS chatbot for Q&A on the Dataiku Python SDK.
 
 ## Contents
 
