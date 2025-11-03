@@ -88,6 +88,9 @@ We exported the requirements file for easier reproducibility.
   - Tracking
     - https://doc.dataiku.com/dss/latest/mlops/experiment-tracking/tracking.html
     - https://doc.dataiku.com/dss/latest/mlops/mlflow-models/limitations.html
+  - Spark
+    - https://doc.dataiku.com/dss/latest/spark/installation.html#unmanaged-spark-on-kubernetes
+    - https://doc.dataiku.com/dss/latest/collaboration/import-notebooks-from-git.html
 - XGBoost
   - https://github.com/optuna/optuna-examples/blob/main/xgboost/xgboost_cv.py
   - https://xgboost.readthedocs.io/en/latest/python/python_api.html
