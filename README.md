@@ -28,13 +28,15 @@ Please see the exported HTML for full outputs (DSS sync clears outputs). The `no
 
 ## Reproducibility
 
-To reproduce the results:
-1. Create a new Project on DSS. 
+To reproduce the results on Dataiku DSS Cloud:
+1. Create a new Project. 
 2. Setup custom code env using [requirements.txt](requirements.txt).
 3. Use the [flow documentation](docs/Dataiku%20Flow%20Documentation%20-%20US_CENSUS_PROJECT.docx) to
   - upload the raw data files,
   - create recipes based on the notebooks, and
   - run the end-to-end Flow.
+
+We recommend using at least CPU-2 16Gb instance for running the flow which typically completes around 6-7 minutes with the current settings, 80% of run time being the HP tuning.
 
 ## Workplan
 
