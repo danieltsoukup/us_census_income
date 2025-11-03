@@ -98,6 +98,7 @@ We exported the requirements file for easier reproducibility.
   - https://github.com/optuna/optuna-examples/blob/main/xgboost/xgboost_cv.py
   - https://xgboost.readthedocs.io/en/latest/python/python_api.html
   - https://xgboost.readthedocs.io/en/stable/parameter.html
+  - https://xgboost.readthedocs.io/en/stable/tutorials/param_tuning.html
 - MLflow and Optuna
   - https://mlflow.org/docs/latest/ml/traditional-ml/tutorials/hyperparameter-tuning/notebooks/hyperparameter-tuning-with-child-runs/
   - https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html
