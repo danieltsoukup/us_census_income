@@ -13,7 +13,7 @@ After the preprocessing of a mix of numeric and categorical features, we optimiz
 
 Analysing feature importance highlighted sex, education and employment indicators as most significant, reaffirming a well-know bias in this historical dataset.
 
-Please see the attached [slides]() for further information.
+Please see the attached [slides](presentation/US%20Census%20-%20Income%20Prediction.pdf) for further information.
 
 
 ## Contents
