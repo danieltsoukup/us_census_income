@@ -7,14 +7,15 @@ The goal of this project was to identify characteristics that are associated wit
 Our initial data exploration uncovered 
 - a number of data quality issues (e.g., null values, duplicate rows),
 - major skew in univariate distributions, in particular only 8% of samples are in the high income category after deduplication,
-- statistically significant relationship between income and number of education, employment and family indicators. 
+- statistically significant relationship between income and a number of education, employment and family indicators. 
 
-After the preprocessing of a mix of numeric and categorical features, we optimized an XGBoost binary classification model finetuning over a number of hyperparameters. We addressed the data imbalance through using adequate loss function (AUC-PR) and class weights, to achieve a final predictive model of .50 F1 score (with 74% precision and 38% recall) on the final test set. 
+After the preprocessing of a mix of numeric and categorical features, we optimized an XGBoost binary classification model finetuning over a number of hyperparameters. We addressed the data imbalance through using an adequate evaluation metric (AUC-PR) and class weights, to achieve a final predictive model of .50 F1 score (with 74% precision and 38% recall) on the final test set. 
 
 Analysing feature importance highlighted sex, education and employment indicators as most significant, reaffirming a well-know bias in this historical dataset.
 
-Please see the attached [slides](presentation/US%20Census%20-%20Income%20Prediction.pdf) for further information.
+Please see the attached [presentation](presentation/US%20Census%20-%20Income%20Prediction.pdf) for a more detailed summary.
 
+**Note**: while being practical in some situations, for this project we chose not to use generative AI in writing the code or the accompanying documentation/materials.
 
 ## Contents
 
@@ -36,7 +37,7 @@ To reproduce the results on Dataiku DSS Cloud:
   - create recipes based on the notebooks, and
   - run the end-to-end Flow.
 
-We recommend using at least CPU-2 16Gb instance for running the flow which typically completes around 6-7 minutes with the current settings, 80% of run time being the HP tuning.
+We recommend using at least CPU-2 16Gb instance for running the flow which typically completes around 6-7 minutes for 20 trials on selected features, 80-90% of the run time being the HP tuning.
 
 ## Workplan
 
@@ -87,7 +88,7 @@ We exported the requirements file for easier reproducibility.
 ## Key References
 
 - Dataiku
-  - Tracking
+  - XP & Model Tracking
     - https://doc.dataiku.com/dss/latest/mlops/experiment-tracking/tracking.html
     - https://doc.dataiku.com/dss/latest/mlops/mlflow-models/limitations.html
   - Spark
@@ -100,3 +101,5 @@ We exported the requirements file for easier reproducibility.
 - MLflow and Optuna
   - https://mlflow.org/docs/latest/ml/traditional-ml/tutorials/hyperparameter-tuning/notebooks/hyperparameter-tuning-with-child-runs/
   - https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html
+- Sklearn
+  - https://scikit-learn.org/stable/api/index.html
