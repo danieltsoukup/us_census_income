@@ -9,7 +9,9 @@ Our initial data exploration uncovered
 - major skew in univariate distributions, in particular only 8% of samples are in the high income category after deduplication,
 - statistically significant relationship between income and number of education, employment and family indicators. 
 
-After the preprocessing of a mix of numeric and categorical features, we optimized an XGBoost binary classification model finetuning over a number of hyperparameters. We addressed the data imbalance through using adequate loss function (AUC-PR) and class weights, to achieve a final predictive model of .54 F1 score. Analysing feature importance highlighted sex, education and employment indicators as most significant, reaffirming a well-know bias in this historical dataset.
+After the preprocessing of a mix of numeric and categorical features, we optimized an XGBoost binary classification model finetuning over a number of hyperparameters. We addressed the data imbalance through using adequate loss function (AUC-PR) and class weights, to achieve a final predictive model of .50 F1 score (with 74% precision and 38% recall) on the final test set. 
+
+Analysing feature importance highlighted sex, education and employment indicators as most significant, reaffirming a well-know bias in this historical dataset.
 
 Please see the attached [slides]() for further information.
 
