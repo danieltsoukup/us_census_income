@@ -21,8 +21,8 @@ Please see the attached [presentation](presentation/US%20Census%20-%20Income%20P
 
 The following order is recommended to review the code:
 - [notebooks/0-EDA](notebooks/0-EDA.ipynb)
-- [recipes/1-Preprocessing](recipes/1-Preprocessing.ipynb)
-- [recipes/2-Modeling](recipes/2-Modeling.ipynb)
+- [recipes/1-Preprocessing](recipes/1-Preprocessing.ipynb) - cleaning & encoding
+- [recipes/2-Modeling](recipes/2-Modeling.ipynb) - hyperparameter tuning & interpretation
 - [recipes/3-Evaluation](recipes/3-Evaluation.ipynb)
 
 Please see the exported HTMLs for full outputs (DSS sync clears outputs). The `notebooks/` folder holds our standalone exploration, while the `recipes/` folder holds flow recipe notebooks.
