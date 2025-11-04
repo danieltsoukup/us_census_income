@@ -65,6 +65,7 @@ may help inform insights and/or tactics for answering the research question of i
   - Presentation outline
 
 - **Day 3: review and refine.**
+  - Improve logging and model management
   - Finalize code and sync with Github
   - Finalize and export presentation
   - Finalize Github repo (readme), ensure reproducibility
