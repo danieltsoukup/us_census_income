@@ -86,6 +86,7 @@ We exported the requirements file for easier reproducibility.
 **Notes**:
 - Our original plan was to use PySpark for data processing and model training to create a scalable flow, however our free-trial DSS subscription did not include the Spark integration.
 - Mlflow and XGboost package version needed to be carefully set to allow model logging to work.
+- The nformat package needed to be set to `nbformat==5.1.2` specifically to allow plotly to render.
  
 ## Key References
 
