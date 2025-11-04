@@ -9,7 +9,7 @@ Our initial data exploration uncovered
 - major skew in univariate distributions, in particular only 8% of samples are in the high income category after deduplication,
 - statistically significant relationship between income and a number of education, employment and family indicators. 
 
-After the preprocessing of a mix of numeric and categorical features, we optimized an XGBoost binary classification model finetuning over a number of hyperparameters. We addressed the data imbalance through using an adequate evaluation metric (AUC-PR) and class weights, to achieve a final predictive model of .50 F1 score (with 74% precision and 38% recall) on the final test set. 
+After the preprocessing of a mix of numeric and categorical features, we optimized XGBoost binary classification models finetuning over a number of hyperparameters. We addressed the data imbalance through using an adequate evaluation metric (AUC-PR) and class weights, to achieve a final predictive model with .50 F1 score (with 74% precision and 38% recall) on the final test set. 
 
 Analysing feature importance highlighted sex, education and employment indicators as most significant, reaffirming a well-know bias in this historical dataset.
 
@@ -25,7 +25,7 @@ The following order is recommended to review the code:
 - [recipes/2-Modeling](recipes/2-Modeling.ipynb)
 - [recipes/3-Evaluation](recipes/3-Evaluation.ipynb)
 
-Please see the exported HTML for full outputs (DSS sync clears outputs). The `notebooks/` folder holds our standalone exploration, while the `recipes/` folder holds flow recipe notebooks.
+Please see the exported HTMLs for full outputs (DSS sync clears outputs). The `notebooks/` folder holds our standalone exploration, while the `recipes/` folder holds flow recipe notebooks.
 
 ## Reproducibility
 
@@ -84,6 +84,7 @@ We exported the requirements file for easier reproducibility.
 
 **Notes**:
 - Our original plan was to use PySpark for data processing and model training to create a scalable flow, however our free-trial DSS subscription did not include the Spark integration.
+- Mlflow and XGboost package version needed to be carefully set to allow model logging to work.
  
 ## Key References
 
